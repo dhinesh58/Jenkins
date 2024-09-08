@@ -32,3 +32,15 @@ You can check the status of the Jenkins service using the command:
 sudo systemctl status jenkins
 
 If Machine have a firewall installed, you must add Jenkins as an exception. You must change YOURPORT in the script below to the port you want to use. Port 8080 is the most common.
+
+
+# Steps to install terraform on Ubuntu 
+1. Install unzip
+sudo apt-get install unzip
+2. Confirm the latest version number on the terraform website:
+https://www.terraform.io/downloads.html
+![alt text](image.png)
+3. Download latest version of the terraform (substituting newer version number if needed)
+
+
+

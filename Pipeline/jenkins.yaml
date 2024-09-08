@@ -30,6 +30,7 @@ pipeline {
              withCredentials([azureServicePrincipal(credentialsId: 'IAC' ,subscriptionIdVariable: 'SUB_ID' ,clientIdVariable: 'CLIENT_ID' ,clientSecretVariable: 'CLIENT_SECRET' ,tenantIdVariable: 'TENANT_ID')])
               {
                  sh "terraform apply -auto-approve -var 'subscription_id=$SUB_ID' -var 'tenant_id=$TENANT_ID' -var 'client_id=$CLIENT_ID' -var 'client_secret=$CLIENT_SECRET'"
+                 sh "terraform destroy -auto-approve -var 'subscription_id=$SUB_ID' -var 'tenant_id=$TENANT_ID' -var 'client_id=$CLIENT_ID' -var 'client_secret=$CLIENT_SECRET'"
               }  
             }
         }          
