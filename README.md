@@ -62,5 +62,33 @@ sudo mv terraform /usr/local/bin/
 
 terraform -version
 
+Accessing Jenkins 
 
+Login to Jenkins using the below URL:
+
+http://:8080 [You can get the Azure vm -instance-public-ip-address from your Azure page]
+
+After you login to Jenkins, - Run the command to copy the Jenkins Admin Password - sudo cat /var/lib/jenkins/secrets/initialAdminPassword - Enter the Administrator password
+
+![alt text](image-1.png)
+
+Click on Install suggested plugins
+
+![alt text](image-2.png)
+
+Wait for the Jenkins to Install suggested plugins
+
+![alt text](image-3.png)
+
+Create First Admin User or Skip the step [If you want to use this Jenkins instance for future use-cases as well, better to create admin user]
+
+![alt text](image-4.png)
+
+Jenkins Installation is Successful. You can now starting using the Jenkins
+
+![alt text](image-5.png)
+
+Install Required plugins from manage jenkins/plugin/Available plugins
+
+![alt text](image-6.png)
 
