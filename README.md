@@ -36,6 +36,7 @@ If Machine have a firewall installed, you must add Jenkins as an exception. You 
 
 # Steps to install terraform on Ubuntu 
 1. Install unzip:
+
 sudo apt-get install unzip
 
 2. Confirm the latest version number on the terraform website:
