@@ -43,15 +43,19 @@ https://www.terraform.io/downloads.html
 ![alt text](image.png)
 
 3. Download latest version of the terraform (substituting newer version number if needed):
+
 wget https://releases.hashicorp.com/terraform/1.9.5/terraform_1.9.5_linux_amd64.zip
 
 4. Extract the downloaded file archive:
+
 unzip terraform_1.9.5_linux_amd64.zip
 
 5. Move the executable into a directory searched for executables:
+
 sudo mv terraform /usr/local/bin/
 
 6. Check the Terraform installed or not using below command:
+
 terraform -version
 
 
